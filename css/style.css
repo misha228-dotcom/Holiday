@@ -10,12 +10,73 @@
  --font-main: 'Montserrat', sans-serif;
 }
 
+body{
+    font-family: var(--font-main);
+}
+
 .container{
     width: 322px;
-    padding: 0px 20px;
+    padding: 0px 15px;
     margin: 0 auto;
 }
 
+.header{
+    padding-top: 20px ;
+    background-color: var(--color-primary);
+    text-align: center;
+}
+
+.header-btn{
+    font-size:14px ;
+    font-weight:700 ;
+    font-family: var(--font-main);
+    color:var(--color-bg) ;
+}
+.header-btn:last-child{
+    border:2px solid var(--color-bg) ;
+    border-radius: 24px;
+    padding: 12px 12px ;
+    margin-left: 20px;
+}
+
+.header-logo{
+    display: inline-block;
+    font-size:16px ;
+    font-family: var(--font-main);
+    font-weight:700 ;
+    color:var(--color-bg) ;
+    margin-top:112px ;
+}
+
+
+.hero{
+    color: var(--color-bg);
+    padding-top: 22px;
+    padding-bottom:138px ;
+    background-color: var(--color-dark);
+    text-align: center;
+}
+
+
+.hero-title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero-text{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.hero-btn{
+    font-size:14px ;
+    font-weight: 700;
+    padding:12px 28px ;
+    border-radius: 16px;
+    background-color: var(--color-accent);
+}
 @media (min-width:768px){
     .container{
          width: 700px;
@@ -23,9 +84,10 @@
     }
 }
 
-@media (min-width:px){
+@media (min-width:1440px){
     .container{
          width: 990px;
     padding: 0px 25px;
     }
 }
+
