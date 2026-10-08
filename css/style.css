@@ -55,6 +55,7 @@ body{
     padding-bottom:138px ;
     background-color: var(--color-dark);
     text-align: center;
+    background-image: url("../img/mobheader.jpg");
 }
 
 
@@ -129,6 +130,10 @@ body{
     .container{
          width: 700px;
     padding: 0px 15px;
+    
+    }
+    .hero{
+background-image: url("../img/tablet-header.jpg");
     }
     .partner{
         padding: 70px 0;
@@ -157,6 +162,9 @@ body{
     .container{
          width: 990px;
     padding: 0px 25px;
+    }
+    .hero{
+        background-image: url("../img/desk-header.jpg");
     }
 }
 
