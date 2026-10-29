@@ -1,0 +1,29 @@
+.header {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    position: absolute;
+}
+
+.header-btn {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-main);
+    color: var(--color-bg);
+}
+
+.header-btn:last-child {
+    border: 2px solid var(--color-bg);
+    border-radius: 24px;
+    padding: 12px 12px;
+    margin-left: 20px;
+}
+
+.header-logo {
+    display: inline-block;
+    font-size: 16px;
+    font-family: var(--font-main);
+    font-weight: 700;
+    color: var(--color-bg);
+    margin-top: 112px;
+}
