@@ -1,8 +1,9 @@
-.hero {
-    color: var(--color-bg);
+ @use "../utils/variables";
+ .hero {
+    color: variables.$colorBg;
     padding-top: 214px;
     padding-bottom: 138px;
-    background-color: var(--color-dark);
+    background-color:variables.$colorDark ;
     text-align: center;
     background-image: url("../img/mobheader.jpg");
     background-repeat: no-repeat;
@@ -21,7 +22,6 @@
 
 .hero-title {
     font-size: 30px;
-    font-weight: 700;
     margin-bottom: 12px;
 }
 
@@ -33,11 +33,10 @@
 
 .hero-btn {
     font-size: 14px;
-    font-weight: 700;
     padding: 12px 28px;
     border-radius: 16px;
-    background-color: var(--color-accent);
-    color: var(--color-bg);
+    background-color: variables.$colorAccent;
+    color: variables.$colorBg;
 }
 
 @media (min-width: 768px) {

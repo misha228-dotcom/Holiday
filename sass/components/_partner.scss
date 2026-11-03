@@ -1,3 +1,4 @@
+@use "../utils/variables";
 .partner {
     padding: 67px 0 56px 0;
     text-align: center;
@@ -5,8 +6,7 @@
 
 .partner-title {
     font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: variables.$mainMargin;
 }
 
 .partner-item {
@@ -25,12 +25,12 @@
 
 .partner-name {
     font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: variables.$mainMargin;
 }
 
 .partner-img {
     margin: 0 auto;
-    margin-bottom: 14px;
+    margin-bottom: variables.$mainMargin;
 }
 
 .partner-btn {
@@ -38,9 +38,9 @@
     font-weight: 700;
     padding: 12px 28px;
     border-radius: 16px;
-    border: 2px solid var(--color-accent);
+    border: 2px solid variables.$colorAccent;
     background-color: transparent;
-    color: var(--color-accent);
+    color: variables.$colorAccent;
     margin-top: 28px;
     width: 100%;
 }

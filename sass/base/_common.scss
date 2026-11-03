@@ -1,3 +1,5 @@
-body {
-    font-family: var(--font-main);
+@use "../utils/variables";
+body{
+    font-family: variables.$fontMain;
+    font-weight: 700;
 }
