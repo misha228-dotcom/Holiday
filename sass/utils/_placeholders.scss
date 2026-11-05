@@ -1,0 +1,11 @@
+@use "./variables";
+
+%button{
+        font-size: 14px;
+        padding: 12px 28px;
+        border-radius: 16px;
+        background-color: variables.$colorAccent;
+        color: variables.$colorBg;
+        font-weight: 700;
+            
+}

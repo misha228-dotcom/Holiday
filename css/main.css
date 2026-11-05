@@ -2,6 +2,15 @@
 /* акцентний колір */
 /* темний текст */
 /* фон сторінки */
+.partner-btn, .hero-btn {
+  font-size: 14px;
+  padding: 12px 28px;
+  border-radius: 16px;
+  background-color: #ff4e50;
+  color: #ffffff;
+  font-weight: 700;
+}
+
 *,
 *::before,
 *::after {
@@ -121,14 +130,6 @@ body {
   margin-bottom: 16px;
 }
 
-.hero-btn {
-  font-size: 14px;
-  padding: 12px 28px;
-  border-radius: 16px;
-  background-color: #ff4e50;
-  color: #ffffff;
-}
-
 @media (min-width: 768px) {
   .hero {
     background-image: url("../img/tablet-header.jpg");
@@ -183,10 +184,6 @@ body {
 }
 
 .partner-btn {
-  font-size: 14px;
-  font-weight: 700;
-  padding: 12px 28px;
-  border-radius: 16px;
   border: 2px solid #ff4e50;
   background-color: transparent;
   color: #ff4e50;

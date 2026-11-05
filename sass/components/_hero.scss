@@ -1,4 +1,9 @@
  @use "../utils/variables";
+
+  @use "../utils/placeholders";
+
+@use "../utils/mixin";
+  
  .hero {
     color: variables.$colorBg;
     padding-top: 214px;
@@ -21,8 +26,9 @@
 }
 
 .hero-title {
-    font-size: 30px;
-    margin-bottom: 12px;
+    @include mixin.text(30px,12px);
+    // font-size: 30px;
+    // margin-bottom: 12px;
 }
 
 .hero-text {
@@ -32,11 +38,12 @@
 }
 
 .hero-btn {
-    font-size: 14px;
-    padding: 12px 28px;
-    border-radius: 16px;
-    background-color: variables.$colorAccent;
-    color: variables.$colorBg;
+    @extend %button;
+    // font-size: 14px;
+    // padding: 12px 28px;
+    // border-radius: 16px;
+    // background-color: variables.$colorAccent;
+    // color: variables.$colorBg;
 }
 
 @media (min-width: 768px) {

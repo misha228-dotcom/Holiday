@@ -1,0 +1,4 @@
+@mixin text($size,$mb){
+    font-size:$size;
+    margin-bottom: $mb;
+}

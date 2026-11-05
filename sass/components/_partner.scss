@@ -1,12 +1,18 @@
 @use "../utils/variables";
+
+ @use "../utils/placeholders";
+
+ @use "../utils/mixin";
+
 .partner {
     padding: 67px 0 56px 0;
     text-align: center;
 }
 
 .partner-title {
-    font-size: 22px;
-    margin-bottom: variables.$mainMargin;
+    @include mixin.text(22px, variables.$mainMargin);
+    // font-size: 22px;
+    // margin-bottom: variables.$mainMargin;
 }
 
 .partner-item {
@@ -34,10 +40,11 @@
 }
 
 .partner-btn {
-    font-size: 14px;
-    font-weight: 700;
-    padding: 12px 28px;
-    border-radius: 16px;
+    @extend %button;
+    // font-size: 14px;
+    // font-weight: 700;
+    // padding: 12px 28px;
+    // border-radius: 16px;
     border: 2px solid variables.$colorAccent;
     background-color: transparent;
     color: variables.$colorAccent;
