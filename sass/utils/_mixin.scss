@@ -2,3 +2,9 @@
     font-size:$size;
     margin-bottom: $mb;
 }
+
+@mixin media-min($width){
+    @media (min-width:$width){
+        @content;
+    }
+}

@@ -2,42 +2,71 @@
 
  @use "../utils/placeholders";
 
- @use "../utils/mixin";
+ @use "../utils/mixin" as m;
 
 .partner {
     padding: 67px 0 56px 0;
     text-align: center;
+    // @media (min-width: 768px){
+    //      padding: 70px 0;
+
+    // }
+@include m.media-min(768px){
+    padding: 70px 0;
+    
+}
+
+&-desc {
+    font-weight: 300;
+}
+
+&-name {
+    font-weight: 700;
+    margin-bottom: variables.$mainMargin;
+}
+
+&-img {
+    margin: 0 auto;
+    margin-bottom: variables.$mainMargin;
+}
 }
 
 .partner-title {
-    @include mixin.text(22px, variables.$mainMargin);
+    @include m.text(22px, variables.$mainMargin);
     // font-size: 22px;
     // margin-bottom: variables.$mainMargin;
+    @media (min-width: 768px){
+        margin-bottom: 30px;
+    }
 }
+
+.partner-list {
+    @media (min-width: 768px) {
+      width: 470px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;  
+    }
+       
+    }
 
 .partner-item {
 
     font-size: 14px;
     line-height: 100%;
-}
-
-.partner-item:not(:last-child) {
+    @media (min-width: 768px){
+        width: 200px;
+    }
+    &:not(:last-child) {
     margin-bottom: 28px;
 }
 
-.partner-desc {
-    font-weight: 300;
 }
 
-.partner-name {
-    font-weight: 700;
-    margin-bottom: variables.$mainMargin;
-}
 
-.partner-img {
-    margin: 0 auto;
-    margin-bottom: variables.$mainMargin;
-}
+
+
 
 .partner-btn {
     @extend %button;
@@ -50,31 +79,35 @@
     color: variables.$colorAccent;
     margin-top: 28px;
     width: 100%;
+    @media (min-width: 768px){
+       width: 195px;
+        padding: 12px 16px; 
+    }
 }
 
 @media (min-width: 768px) {
-    .partner {
-        padding: 70px 0;
-    }
+    // .partner {
+    //     padding: 70px 0;
+    // }
 
-    .partner-list {
-        width: 470px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 0 auto;
-    }
+    // .partner-list {
+    //     width: 470px;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: wrap;
+    //     margin: 0 auto;
+    // }
 
-    .partner-item {
-        width: 200px;
-    }
+    // .partner-item {
+    //     width: 200px;
+    // }
 
-    .partner-title {
-        margin-bottom: 30px;
-    }
+    // .partner-title {
+    //     margin-bottom: 30px;
+    // }
 
-    .partner-btn {
-        width: 195px;
-        padding: 12px 16px;
-    }
+    // .partner-btn {
+    //     width: 195px;
+    //     padding: 12px 16px;
+    // }
 }
